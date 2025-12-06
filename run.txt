@@ -1,0 +1,2 @@
+nasm -f win32 hello.asm -o hello.obj
+gcc hello.obj -o hello.exe -Wl,--entry=_main -lkernel32 -lshell32 -nostdlib
